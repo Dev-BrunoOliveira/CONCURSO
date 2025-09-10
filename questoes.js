@@ -62,7 +62,7 @@ const questoes = {
       alternativas: [
         "O servidor que foi aprovado, tomou posse ontem.",
         "Os documentos, que eram essenciais ao processo foram anexados.",
-        "São Paulo, 21 de outubro de 2023.",
+        "São Paulo, 10 de setembro de 2025.",
         "Ele perguntou; onde está o processo?"
       ],
       correta: 2,
@@ -73,6 +73,24 @@ const questoes = {
       alternativas: ["Derivação sufixal", "Derivação prefixal", "Derivação parassintética", "Derivação prefixal e sufixal"],
       correta: 3,
       explicacao: "A palavra possui um prefixo ('im-') e um sufixo ('-ível') que são adicionados à palavra primitiva 'prescindir'. Como os afixos podem ser adicionados em momentos diferentes, trata-se de derivação prefixal e sufixal."
+    },
+    {
+        enunciado: "No trecho 'O servidor entregou o relatório ao chefe', a substituição dos termos sublinhados por pronomes oblíquos correspondentes resulta em:",
+        alternativas: ["entregou-o-lhe", "entregou-lhe-o", "lho entregou", "entregou-o para ele"],
+        correta: 1,
+        explicacao: "O objeto direto 'o relatório' é substituído por 'o'. O objeto indireto 'ao chefe' é substituído por 'lhe'. A regra de colocação pronominal em verbos terminados em vogal é ênclise (pronome depois do verbo), com o pronome indireto vindo antes do direto: entregou-lhe-o."
+    },
+    {
+        enunciado: "Assinale a alternativa em que o verbo 'haver' está empregado INCORRETAMENTE.",
+        alternativas: ["Haverão de existir novas oportunidades.", "Houve por bem o juiz de reconsiderar.", "Há processos complexos neste cartório.", "Não sei se ainda haverá ingressos."],
+        correta: 0,
+        explicacao: "Na locução verbal 'haver de' + infinitivo, o verbo 'haver' é auxiliar e, portanto, flexiona-se para concordar com o sujeito. O sujeito de 'existir' é 'novas oportunidades' (plural), logo o correto seria 'Hão de existir'. Nas outras opções, 'haver' está correto como verbo principal (sentido de existir) ou auxiliar."
+    },
+    {
+        enunciado: "A colocação do pronome oblíquo átono está em conformidade com a norma-padrão em:",
+        alternativas: ["Me informaram sobre o novo prazo.", "O processo que encaminhou-se ao setor já foi analisado.", "Em se tratando de prazos, seja rigoroso.", "Nunca enganei-te, meu amigo."],
+        correta: 2,
+        explicacao: "A expressão 'Em se tratando de' é uma construção correta com o pronome proclítico (antes do verbo) devido à preposição 'Em'. A alternativa A erra por iniciar a frase com pronome oblíquo. A B erra pois o 'que' atrai o pronome (o que se encaminhou). A D erra pois 'nunca' é palavra atrativa (Nunca te enganei)."
     }
   ],
   direito_constitucional: [
@@ -154,6 +172,24 @@ const questoes = {
       ],
       correta: 0,
       explicacao: "A competência originária do STF está descrita no Art. 102 da CF. O inciso I, alínea 'd', estabelece que compete ao STF julgar o habeas corpus, o mandado de segurança, o habeas data e o mandado de injunção contra atos do Presidente da República, das Mesas da Câmara e do Senado, etc."
+    },
+    {
+        enunciado: "Conforme o Art. 37 da CF, a investidura em cargo ou emprego público depende de aprovação prévia em concurso público, ressalvadas:",
+        alternativas: ["As nomeações para qualquer cargo em comissão.", "As nomeações para cargo em comissão, declarados em lei de livre nomeação e exoneração.", "Os cargos de natureza técnica que exijam notório saber.", "As contratações temporárias para cargos de direção."],
+        correta: 1,
+        explicacao: "O Art. 37, II, da CF estabelece a regra do concurso público, mas excetua 'as nomeações para cargo em comissão declarado em lei de livre nomeação e exoneração', que são as funções de confiança."
+    },
+    {
+        enunciado: "O Mandado de Injunção será concedido sempre que:",
+        alternativas: ["Alguém sofrer coação em sua liberdade de locomoção por ilegalidade ou abuso de poder.", "A falta de norma regulamentadora torne inviável o exercício dos direitos e liberdades constitucionais.", "Para proteger direito líquido e certo, não amparado por habeas corpus ou habeas data.", "O responsável pela informação se recuse a fornecê-la ou a retificá-la."],
+        correta: 1,
+        explicacao: "Esta é a exata definição da finalidade do Mandado de Injunção, previsto no Art. 5º, LXXI, da CF. Ele serve para combater a inércia do poder público em regulamentar uma norma constitucional de eficácia limitada."
+    },
+    {
+        enunciado: "Assinale a alternativa que descreve um direito social, nos termos do Art. 6º da Constituição Federal.",
+        alternativas: ["Livre manifestação do pensamento.", "Inviolabilidade da vida privada.", "Moradia.", "Liberdade de associação para fins lícitos."],
+        correta: 2,
+        explicacao: "O Art. 6º da CF elenca os direitos sociais, que incluem educação, saúde, alimentação, trabalho, moradia, transporte, lazer, segurança, previdência social, etc. Os demais são direitos individuais previstos no Art. 5º."
     }
   ],
   direito_administrativo: [
@@ -208,6 +244,24 @@ const questoes = {
       alternativas: ["Bens dominicais.", "Bens de uso especial.", "Bens públicos de uso comum.", "Bens patrimoniais disponíveis."],
       correta: 2,
       explicacao: "Bens de uso comum são aqueles que podem ser utilizados por qualquer pessoa sem necessidade de permissão especial. Bens de uso especial são afetados a um serviço público (ex: um fórum). Bens dominicais são o patrimônio disponível do Estado (ex: um terreno baldio)."
+    },
+    {
+        enunciado: "O atributo do ato administrativo que impõe a coercibilidade de seu cumprimento, permitindo o uso da força pela Administração, é a:",
+        alternativas: ["Presunção de legitimidade", "Autoexecutoriedade", "Tipicidade", "Imperatividade"],
+        correta: 1,
+        explicacao: "A autoexecutoriedade é o atributo que permite à Administração executar suas próprias decisões, sem precisar de autorização prévia do Poder Judiciário, inclusive com o uso de meios de coação direta."
+    },
+    {
+        enunciado: "Segundo a Lei de Improbidade Administrativa (Lei nº 8.429/92), a ação para a aplicação das sanções nela previstas prescreve em:",
+        alternativas: ["5 anos", "3 anos", "10 anos", "8 anos"],
+        correta: 3,
+        explicacao: "Com as alterações da Lei 14.230/2021, o prazo prescricional para a ação de improbidade passou a ser de 8 anos, contados a partir da ocorrência do fato ou, no caso de infrações permanentes, do dia em que cessou a permanência."
+    },
+    {
+        enunciado: "Um servidor público que utiliza materiais da repartição para realizar um trabalho particular comete um ato de improbidade administrativa que gera:",
+        alternativas: ["Enriquecimento ilícito.", "Prejuízo ao erário.", "Atentado contra os princípios da administração.", "Concessão indevida de benefício fiscal."],
+        correta: 1,
+        explicacao: "O uso de bens públicos em proveito particular, mesmo que não gere enriquecimento para o agente, causa um dano (prejuízo) ao patrimônio público. A conduta se enquadra no Art. 10 da Lei de Improbidade Administrativa."
     }
   ],
   direito_penal: [
@@ -258,6 +312,24 @@ const questoes = {
       alternativas: ["Desistência voluntária", "Tentativa", "Arrependimento eficaz", "Consumação"],
       correta: 1,
       explicacao: "Esta é a definição de Tentativa (Art. 14, II, CP). Na desistência voluntária e no arrependimento eficaz, o agente voluntariamente impede a consumação, o que não ocorre aqui."
+    },
+    {
+        enunciado: "O funcionário público que solicita vantagem indevida, em razão da função, pratica o crime de:",
+        alternativas: ["Concussão", "Corrupção passiva", "Peculato", "Corrupção ativa"],
+        correta: 1,
+        explicacao: "O verbo 'SOLICITAR' caracteriza o crime de Corrupção Passiva (Art. 317, CP). Se o verbo fosse 'exigir', seria Concussão. Corrupção ativa é praticada pelo particular que oferece a vantagem."
+    },
+    {
+        enunciado: "Apropriar-se o funcionário público de dinheiro, valor ou qualquer outro bem móvel, público ou particular, de que tem a posse em razão do cargo, ou desviá-lo, em proveito próprio ou alheio, configura o crime de:",
+        alternativas: ["Estelionato", "Apropriação indébita", "Peculato", "Roubo"],
+        correta: 2,
+        explicacao: "Esta é a exata descrição do crime de Peculato, previsto no Art. 312 do Código Penal. É um crime especial próprio de funcionário público contra a administração em geral."
+    },
+    {
+        enunciado: "Retardar ou deixar de praticar, indevidamente, ato de ofício, ou praticá-lo contra disposição expressa de lei, para satisfazer interesse ou sentimento pessoal, é a conduta do crime de:",
+        alternativas: ["Desacato", "Desobediência", "Corrupção Passiva", "Prevaricação"],
+        correta: 3,
+        explicacao: "A definição corresponde ao crime de Prevaricação (Art. 319, CP). O elemento subjetivo específico é a 'satisfação de interesse ou sentimento pessoal'."
     }
   ],
   direito_processual_civil: [
@@ -308,6 +380,24 @@ const questoes = {
       alternativas: ["Recorrer de todas as decisões desfavoráveis.", "Expor os fatos em juízo conforme a verdade.", "Formular pretensões apenas quando tiverem certeza do resultado.", "Deduzir defesa apenas quando houver prova documental."],
       correta: 1,
       explicacao: "O Art. 77, I, do CPC estabelece que é dever das partes, de seus procuradores e de todos que participam do processo, expor os fatos em juízo conforme a verdade, em respeito ao princípio da boa-fé processual."
+    },
+    {
+        enunciado: "O pronunciamento do juiz que, sem resolver o mérito, põe fim à fase cognitiva do procedimento comum, bem como extingue a execução, é denominado:",
+        alternativas: ["Despacho", "Decisão Interlocutória", "Sentença", "Acórdão"],
+        correta: 2,
+        explicacao: "Esta é a definição de Sentença, conforme o Art. 203, § 1º, do CPC. Ela pode resolver o mérito (definitiva) ou não (terminativa), mas sempre põe fim a uma fase do processo ou à execução."
+    },
+    {
+        enunciado: "A intimação é o ato pelo qual se dá ciência a alguém dos atos e dos termos do processo. Para os advogados constituídos nos autos, ela se dará preferencialmente por:",
+        alternativas: ["Carta com aviso de recebimento.", "Oficial de justiça.", "Meio eletrônico, via Diário de Justiça.", "Edital afixado na sede do juízo."],
+        correta: 2,
+        explicacao: "O Art. 272 do CPC estabelece que as intimações dos advogados serão feitas, em regra, por publicação dos atos no órgão oficial, que é o Diário de Justiça Eletrônico."
+    },
+    {
+        enunciado: "Conforme o CPC, o réu poderá oferecer contestação, por petição, no prazo de:",
+        alternativas: ["10 dias", "15 dias", "20 dias", "30 dias"],
+        correta: 1,
+        explicacao: "O prazo para o réu apresentar sua defesa (contestação) é de 15 dias úteis, de acordo com o Art. 335 do CPC. O início da contagem do prazo varia conforme a forma da citação."
     }
   ],
   direito_processual_penal: [
@@ -351,6 +441,24 @@ const questoes = {
       alternativas: ["Princípio do contraditório", "Princípio da ampla defesa", "Ônus da prova", "Princípio da publicidade"],
       correta: 2,
       explicacao: "O Art. 156 do CPP estabelece a regra do ônus da prova, ou seja, a responsabilidade de provar um fato cabe a quem o alega (acusação prova a culpa, defesa prova álibis, etc.)."
+    },
+    {
+        enunciado: "No âmbito dos Juizados Especiais Criminais (Lei 9.099/95), o acordo homologado pelo juiz mediante o qual o autor do fato aceita uma pena restritiva de direitos ou multa, evitando a instauração do processo, é chamado de:",
+        alternativas: ["Suspensão condicional do processo", "Composição dos danos civis", "Transação penal", "Representação"],
+        correta: 2,
+        explicacao: "A Transação Penal (Art. 76 da Lei 9.099/95) é um acordo oferecido pelo Ministério Público em crimes de menor potencial ofensivo, no qual o investigado aceita cumprir uma pena antecipada para que o processo não seja iniciado."
+    },
+    {
+        enunciado: "O juiz que se julga incompetente para julgar o processo deve:",
+        alternativas: ["Arquivar o processo e comunicar as partes.", "Remeter os autos ao juiz que entende ser competente.", "Julgar o processo e anular sua própria decisão.", "Suspender o processo até que o Tribunal decida."],
+        correta: 1,
+        explicacao: "Reconhecida a incompetência, o juiz deve remeter o processo ao juízo competente, conforme o Art. 109 do CPP, que decidirá sobre a validade dos atos já praticados."
+    },
+    {
+        enunciado: "A citação do militar far-se-á:",
+        alternativas: ["Por edital, em qualquer hipótese.", "Por mandado, entregue ao chefe da repartição em que servir.", "Pelo correio, no endereço de sua residência.", "Sempre na pessoa de seu advogado constituído."],
+        correta: 1,
+        explicacao: "O Art. 358 do CPP estabelece uma regra especial para a citação do militar, que será feita por intermédio do chefe do respectivo serviço, para garantir que o ato chegue ao conhecimento do citando."
     }
   ],
   normas_da_corregedoria: [
@@ -404,6 +512,24 @@ const questoes = {
       alternativas: ["O processo atinge 200 folhas.", "O processo é distribuído para uma nova vara.", "Houver determinação expressa do juiz para qualquer finalidade.", "Os autos principais subirem ao Tribunal de Justiça em grau de recurso."],
       correta: 3,
       explicacao: "Quando um recurso (como Apelação ou Agravo) é interposto e os autos físicos precisam ser enviados ao Tribunal, formam-se os 'autos suplementares' para que a execução provisória da sentença possa continuar na primeira instância."
+    },
+    {
+        enunciado: "Incumbe ao Escrivão Judicial, de acordo com as Normas da CGJ-SP:",
+        alternativas: ["Proferir decisões interlocutórias nos processos.", "Realizar audiências na ausência do juiz.", "Abrir conclusão dos autos ao juiz no prazo de 1 dia.", "Aconselhar as partes sobre o mérito da causa."],
+        correta: 2,
+        explicacao: "É uma das principais incumbências do diretor de ofício (escrivão). Após a juntada de petições, os autos devem ser encaminhados (feitos conclusos) ao juiz para despacho, decisão ou sentença no prazo de 1 dia, e executados em 5 dias."
+    },
+    {
+        enunciado: "A restauração de autos extraviados ou destruídos será processada:",
+        alternativas: ["Em um novo processo, com nova distribuição.", "Nos próprios autos, após sua localização.", "Em autos apartados, apensados ao processo principal se encontrado.", "Perante o Tribunal de Justiça, independentemente da instância."],
+        correta: 0,
+        explicacao: "A restauração de autos dá origem a um novo processo, com nova numeração e registro, onde as partes serão intimadas a apresentar as cópias de documentos que possuírem para recompor o processo original."
+    },
+    {
+        enunciado: "Segundo as Normas da Corregedoria, é vedado ao servidor lançar nos autos cotas:",
+        alternativas: ["Certificando o decurso de um prazo.", "Interlineares ou marginais, devendo usar certidão para qualquer observação.", "Informando a conclusão dos autos ao juiz.", "Indicando o número de folhas do processo."],
+        correta: 1,
+        explicacao: "As Normas proíbem expressamente que os servidores façam anotações nas margens ou entrelinhas dos autos. Qualquer observação ou informação necessária deve ser feita por meio de uma certidão formal."
     }
   ],
   informatica: [
@@ -464,6 +590,24 @@ const questoes = {
       ],
       correta: 2,
       explicacao: "Um clique seleciona o ponto de inserção. Um clique duplo seleciona a palavra. Um clique triplo em qualquer lugar de um parágrafo seleciona o parágrafo inteiro."
+    },
+    {
+        enunciado: "No Microsoft Word, para aplicar negrito a um texto selecionado, qual atalho de teclado deve ser utilizado?",
+        alternativas: ["Ctrl + I", "Ctrl + N", "Ctrl + S", "Ctrl + B"],
+        correta: 1,
+        explicacao: "O atalho para Negrito (Bold) no Word em português é Ctrl + N. Em inglês, seria Ctrl + B. Ctrl + I é para Itálico e Ctrl + S para Sublinhado."
+    },
+    {
+        enunciado: "No Microsoft Excel, a função =SE(A1>10; 'APROVADO'; 'REPROVADO') retornará 'APROVADO' se:",
+        alternativas: ["O valor na célula A1 for igual a 10.", "O valor na célula A1 for menor que 10.", "O valor na célula A1 for maior ou igual a 10.", "O valor na célula A1 for estritamente maior que 10."],
+        correta: 3,
+        explicacao: "A função SE avalia uma condição lógica. Se a condição (A1>10) for verdadeira, ela retorna o primeiro valor ('APROVADO'). Se for falsa, retorna o segundo ('REPROVADO'). A condição só é verdadeira se A1 for 11, 12, etc."
+    },
+    {
+        enunciado: "No contexto de segurança da informação, um software projetado para se infiltrar em um sistema de computador de forma oculta, com o intuito de causar danos ou roubar informações, é conhecido como:",
+        alternativas: ["Firewall", "Antivírus", "Malware", "Backup"],
+        correta: 2,
+        explicacao: "Malware é o termo genérico para qualquer software malicioso (malicious software), que inclui vírus, worms, trojans, spyware, etc. Firewall é uma barreira de proteção e Antivírus detecta e remove malwares."
     }
   ],
   raciocinio_logico: [
@@ -506,6 +650,24 @@ const questoes = {
       alternativas: ["35", "36", "37", "38"],
       correta: 2,
       explicacao: "A lógica da sequência é o quadrado da posição mais um: Posição 1: (1² + 1 = 2). Posição 2: (2² + 1 = 5). Posição 3: (3² + 1 = 10). A próxima é a posição 6: (6² + 1 = 37)."
+    },
+    {
+        enunciado: "Se o servidor é eficiente, então o processo anda rápido. O processo não anda rápido. Portanto, pode-se concluir que:",
+        alternativas: ["O servidor é eficiente.", "O servidor não é eficiente.", "Se o processo anda rápido, o servidor é eficiente.", "O servidor pode ou não ser eficiente."],
+        correta: 1,
+        explicacao: "Trata-se de um argumento lógico válido chamado Modus Tollens. A estrutura é: Se P -> Q, e temos ~Q (a negação da consequência), então a conclusão é ~P (a negação da causa)."
+    },
+    {
+        enunciado: "A afirmação 'Nenhum servidor está de férias' é logicamente equivalente a:",
+        alternativas: ["Todos os servidores estão trabalhando.", "Algum servidor está de férias.", "Não é verdade que algum servidor está de férias.", "Todos os servidores não estão de férias."],
+        correta: 2,
+        explicacao: "A proposição 'Nenhum A é B' é a negação universal da proposição 'Algum A é B'. Dizer que ninguém está de férias é o mesmo que dizer que é falso que exista alguém de férias."
+    },
+    {
+        enunciado: "Considere a proposição 'Ana é escrevente ou Bruno é oficial'. A negação dessa proposição é:",
+        alternativas: ["Se Ana não é escrevente, então Bruno não é oficial.", "Ana não é escrevente e Bruno não é oficial.", "Ana é escrevente e Bruno não é oficial.", "Ana não é escrevente ou Bruno não é oficial."],
+        correta: 1,
+        explicacao: "Pelas Leis de De Morgan, a negação de uma disjunção (P ou Q) é a conjunção das negações (~P e ~Q). Nega-se a primeira parte, troca-se 'ou' por 'e', e nega-se a segunda parte."
     }
   ],
   matematica: [
@@ -538,6 +700,24 @@ const questoes = {
       alternativas: ["13 m²", "26 m²", "36 m²", "40 m²"],
       correta: 3,
       explicacao: "A área de um retângulo é calculada multiplicando-se a medida da largura pela medida do comprimento. Área = 5m * 8m = 40 m²."
+    },
+    {
+        enunciado: "Um escrevente comprou um Vade Mecum com 25% de desconto e pagou R$ 180,00. Qual era o preço original do livro, sem o desconto?",
+        alternativas: ["R$ 200,00", "R$ 225,00", "R$ 240,00", "R$ 250,00"],
+        correta: 2,
+        explicacao: "Se houve 25% de desconto, o valor pago (R$ 180) corresponde a 75% (ou 0,75) do preço original (P). A equação é: 0,75 * P = 180. Logo, P = 180 / 0,75, que resulta em R$ 240,00."
+    },
+    {
+        enunciado: "Um capital de R$ 5.000,00 foi aplicado a juros simples de 2% ao mês. Após 6 meses, qual será o montante (capital + juros)?",
+        alternativas: ["R$ 5.500,00", "R$ 5.600,00", "R$ 6.000,00", "R$ 5.800,00"],
+        correta: 1,
+        explicacao: "A fórmula do juro simples é J = C * i * t. J = 5000 * 0,02 * 6. J = 100 * 6 = R$ 600,00. O montante é o capital inicial mais os juros: M = 5000 + 600 = R$ 5.600,00."
+    },
+    {
+        enunciado: "A razão entre o número de servidores homens e mulheres em um cartório é de 3 para 5. Se há um total de 40 servidores, quantas são as mulheres?",
+        alternativas: ["15", "20", "25", "30"],
+        correta: 2,
+        explicacao: "A proporção total é 3 + 5 = 8 partes. Dividimos o total de servidores pelo total de partes: 40 / 8 = 5. Cada parte equivale a 5 servidores. Como as mulheres correspondem a 5 partes, o total de mulheres é 5 * 5 = 25."
     }
   ]
 };
