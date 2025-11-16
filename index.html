@@ -1,68 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Passando no Concurso</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passando no Concurso</title>
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <meta name="apple-mobile-web-app-title" content="Ja Passei">
-  <link rel="manifest" href="site.webmanifest">
-</head>
-<body>
-  <header>
-    <h1>Quiz para Escrevente TJ-SP</h1>
-    <select id="materiaSelect">
-      <option value="">-- Selecione a Matéria --</option>
-      <option value="portugues">Português</option>
-      <option value="direito_constitucional">Direito Constitucional</option>
-      <option value="direito_administrativo">Direito Administrativo</option>
-      <option value="direito_penal">Direito Penal</option>
-      <option value="direito_processual_civil">Direito Processual Civil</option>
-      <option value="direito_processual_penal">Direito Processual Penal</option>
-      <option value="normas_da_corregedoria">Normas da Corregedoria</option>
-      <option value="informatica">Informática</option>
-      <option value="raciocinio_logico">Raciocínio Lógico</option>
-      <option value="matematica">Matemática</option>
-      <option value="atualidades">Atualidades</option>
-    </select>
-    <button id="iniciarBtn">Iniciar Quiz</button>
-  </header>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Ja Passei" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <h1>Quiz para Escrevente TJ-SP</h1>
+      <select id="materiaSelect">
+        <option value="">-- Selecione a Matéria --</option>
+        <option value="portugues">Português</option>
+        <option value="direito_constitucional">Direito Constitucional</option>
+        <option value="direito_administrativo">Direito Administrativo</option>
+        <option value="direito_penal">Direito Penal</option>
+        <option value="direito_processual_civil">
+          Direito Processual Civil
+        </option>
+        <option value="direito_processual_penal">
+          Direito Processual Penal
+        </option>
+        <option value="normas_da_corregedoria">Normas da Corregedoria</option>
+        <option value="informatica">Informática</option>
+        <option value="raciocinio_logico">Raciocínio Lógico</option>
+        <option value="matematica">Matemática</option>
+        <option value="atualidades">Atualidades</option>
+      </select>
+      <button id="iniciarBtn">Iniciar Quiz</button>
+    </header>
 
-  <main>
-    <div id="quizContainer" class="hidden">
-      <h2 id="materiaTitulo"></h2>
-      <div id="questaoContainer"></div>
-      <button id="proximaBtn" class="hidden">Próxima Questão</button>
+    <main>
+      <div id="navBotoes" class="hidden">
+        <button id="btnIrParaInicio">Início</button>
+      </div>
+
+      <div id="quizContainer" class="hidden">
+        <h2 id="materiaTitulo"></h2>
+        <div id="progressoContainer">
+          <div id="progressoBarra"></div>
+        </div>
+
+        <h2 id="materiaTitulo"></h2>
+
+        <div id="questaoContainer"></div>
+
+        <div id="questaoContainer"></div>
+
+        <div id="botoesNavegacaoInferior" class="hidden">
+          <button id="btnVoltar">Voltar</button>
+
+          <button id="botaoProsseguir">Prosseguir</button>
+        </div>
+
+        <button id="proximaBtn" class="hidden">Próxima</button>
+      </div>
+
+      <div id="resultadoContainer" class="hidden">
+        <h2>Resultado Final</h2>
+        <p id="resultadoTexto"></p>
+        <button id="reiniciarBtn">Responder Outra Matéria</button>
+      </div>
+    </main>
+
+    <div id="modalExplicacao" class="modal-overlay hidden">
+      <div class="modal-content">
+        <span class="close-btn" onclick="fecharModal()">&times;</span>
+        <h3>Ops, resposta errada!</h3>
+        <p>A resposta correta é a destacada em verde.</p>
+        <div id="explicacaoTexto"></div>
+      </div>
     </div>
 
-    <div id="resultadoContainer" class="hidden">
-      <h2>Resultado Final</h2>
-      <p id="resultadoTexto"></p>
-      <button id="reiniciarBtn">Responder Outra Matéria</button>
-    </div>
-  </main>
+    <footer class="aviso">
+      <small>Projeto de estudo — não oficial do TJ-SP.</small>
+    </footer>
 
-  <div id="modalExplicacao" class="modal-overlay hidden">
-    <div class="modal-content">
-      <span class="close-btn" onclick="fecharModal()">&times;</span>
-      <h3>Ops, resposta errada!</h3>
-      <p>A resposta correta é a destacada em verde.</p>
-      <div id="explicacaoTexto"></div>
-    </div>
-  </div>
-
-  <footer class="aviso">
-  <small>Projeto de estudo — não oficial do TJ-SP.</small>
-</footer>
-
-
-  <script src="questoes.js"></script>
-  <script src="script.js"></script>
-</body>
+    <script src="questoes.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
